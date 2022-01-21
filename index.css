@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 3vmin;
+    margin: 1.25rem auto;
+    color: hsl(233, 94%, 26%);
+}
+
+.subtitle {
+    color: hsl(0, 0%, 49%);
+    padding: 0 2.5rem;
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1.25rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 1.875rem;
+}
+
+.nav-links li a {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.125rem;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3),rgba(0,0,0,0.3) ),  url('https://images.unsplash.com/photo-1557223168-10ec70721258?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.header-content {
+    margin-bottom: 20rem;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.header-content .heading {
+    font-size: 4vmin;
+}
+
+.header-content .subheading {
+    font-size: 7vmin;
+    margin-block: 2rem;
+}
+
+.line {
+    width: 9.375rem;
+    height: 0.25rem;
+    background-color: hsl(233, 94%, 26%);
+    margin: 0.625rem auto;
+    border-radius: 0.313rem;
+}
+
+.btn {
+    padding: 0.5rem 0.928rem;
+    background-color: hsl(233, 94%, 26%);
+    border-radius: 1.875rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.menu-btn {
+    position: absolute;
+    top: 1.875rem;
+    right: 1.875rem;
+    width: 1.8rem;
+    cursor: pointer;
+    display: none;
+}
+
+.trips {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: 4vmin;
+    color: hsl(240, 27%, 39%);
+    margin-right: 2rem;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 16px;
+    box-shadow: 0 0 13px 0px rgba(0,0,0,.3);
+    transition: .5s;
+    overflow: hidden;
+    margin: .85rem;
+}
+
+.card:hover{
+    height: 397px;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 16px;
+    transition: .5s;
+}
+
+.card:hover img{
+    border-radius: 16px 16px 0 0;
+}
+
+.card .card-body{
+    padding: .5rem .85rem 1rem;
+    height: 0;
+}
+
+.card .card-body h6{
+    margin: .5rem 0;
+    font-size: .85rem;
+    color: hsl(240, 27%, 39%);
+    letter-spacing: 3px;
+}
+
+.card .card-body p{
+    text-align: justify;
+    font-size: .9rem;
+    line-height: 25px;
+}
+
+.card .card-body div{
+    text-align: right;
+    width: 100%;
+}
+
+.card .card-body div a{
+    position: relative;
+    text-decoration: none;
+    color: hsl(230, 98%, 66%);
+    padding: .5rem;
+    text-align: center;
+    z-index: 999;
+    font-size: .85rem;
+}
+
+.card .card-body div a::before{
+    position: absolute;
+    content: '';
+    width: 13px;
+    height: 13px;
+    background: hsl(230, 98%, 66%);
+    border-radius: 300px;
+    left: -13px;
+    top: 3px;
+    z-index: -1;
+    transition: .3s;
+}
+
+.card .card-body div a:hover{
+    color: #fff;
+}
+
+.card .card-body div a:hover::before{
+    width: 100%;
+    height: 88%;
+    left: 0;
+}
+
+.explore {
+    width: 100%;
+    height: 65vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3),rgba(0,0,0,0.3) ),  url('https://images.unsplash.com/photo-1551503863-8bd21b84af63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.explore-content {
+    padding: 3.125rem;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.explore-content h1 {
+    font-size: 7vmin;
+    text-align: center;
+}
+
+.explore-content .line {
+    margin-bottom: 3.125rem;
+    margin: 0;
+    margin-block: 1rem;
+}
+
+.explore-content p {
+    max-width: 31rem;
+    color: rgb(221, 221, 221);
+    line-height: 1.5;
+}
+
+.explore-content .btn {
+    margin-top: 1.875rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem;
+}
+
+.col-content {
+    width: 40%;
+}
+
+.col-content h1 {
+    font-size: 7vmin;
+    color: hsl(240, 27%, 39%);
+}
+
+.col-content p {
+    padding: 0;
+    margin: 1.875rem auto;
+    line-height: 1.4rem;
+}
+
+.col-content .line {
+    margin-left: -1px;
+}
+
+.col-content .btn {
+    transform: translateX(-170%);
+}
+
+.img-col {
+    width: 60%;
+}
+
+.tours .img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.img-gallery img {
+    max-width: 300px;
+    margin: 0.625rem;
+}
+
+
+footer {
+background: #1A1E25;
+color: #868c96;
+}
+
+footer p {
+padding: 40px 0;
+text-align: center;
+}
+
+footer img {
+width: 44px;
+}
+
+@media only screen and (max-width: 850px) {
+    nav {
+        padding: 0;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .logo {
+        position: absolute;
+        top: 1.875rem;
+        left: 1.875rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: hsl(233, 94%, 21%);
+        margin-top: -59.25rem;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu {
+        margin-top: 0rem;
+    }
+
+    .nav-links li {
+        margin: 1.875rem auto;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        margin: 1.25rem auto;
+    }
+
+    .col img {
+        max-width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        margin: 0;
+    }
+}
+
