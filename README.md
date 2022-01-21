@@ -1,4 +1,4 @@
-# Pokemon API 🎆
+# Travel website template 🌇
 ![index](https://github.com/Daniels-not/Travel-website-landingpage-template/blob/master/img/preview.PNG)
 
 ## Functionalities ✨
